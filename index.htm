@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Mis Fotos</title>
+    <title>Mis Fotos jose</title>
     <!---------iconos----------->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
@@ -25,21 +25,36 @@
     <link rel="apple-touch-icon" href="./Lhuis.png">
     <link rel="apple-touch-startup-image" href="./Lhuis.png">
     <link rel="manifest" href="./manifest.json">
-</head>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+</head>
 
 <style>
     * {
         margin: 0;
         padding: 0;
-        user-select: none;
+        text-align: center
+
+    }
+
+    body {
+        background: #ffffff;
     }
 
     h1 {
         font-family: 'Great Vibes', cursive;
-        color: black;
+        color: rgb(0, 0, 0);
         font-weight: 400;
-        font-size: 60px;
+
+        font-size: 3rem;
+        margin-top: 40px;
+        text-align: center;
     }
 
     p {
@@ -47,6 +62,7 @@
         Text-transform: capitalize;
         font-weight: 100;
         margin: 10px;
+        color: #000000;
     }
 
     .caja {
@@ -57,23 +73,61 @@
         flex-direction: column;
     }
 
-    .portada {
-        width: 85%;
-        margin-top: 50px;
-        margin-bottom: 50px;
+    .cajaT {
+        width: 100%;
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+
     }
 
-    @media (max-width: 300px) {
-        .portada {
-            width: 80%;
-            margin-top: 50px;
-            margin-bottom: 50px;
+    .portadac {
+        margin-top: 190px;
+
+        width: 100%;
+        height: auto;
+        background-color: #ff000000;
+        margin-bottom: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    @media (max-width: 900px) {
+        .portadac {
+            margin-top: 113px;
+            max-width: 100%;
+            background-color: #2b00ff00;
+
         }
     }
 
-    h1 {
-        font-size: 240%;
+    @media (max-width: 900px) {
+        .portada {
+            max-width: 85%;
+            position: absolute;
+        }
+
+        .portada2 {
+            max-width: 75%;
+        }
     }
+
+    .portada {
+        width: 500px;
+        position: absolute;
+    }
+
+    .portada2 {
+        width: 420px;
+    }
+
+
+
+
 
     .qr-c {
         width: 100%;
@@ -91,7 +145,7 @@
 
     .datos {
         width: 100%;
-        margin-top: 200px;
+        margin-top: 100px;
         margin-bottom: 20px;
     }
 
@@ -106,7 +160,7 @@
     button {
         width: 150px;
         border: none;
-        color: #fff;
+        color: #ffffff;
         background-color: #000000;
         padding: 10px;
         margin: 5px;
@@ -132,48 +186,190 @@
     }
 
     .im {
-        width: 85%;
+        width: 90%;
     }
-    .bt-ver{
+
+    .com {
         width: 100%;
-        height: 200px;
+        height: auto;
+        background-color: rgba(0, 60, 255, 0);
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: flex-start;
+        align-items: center;
+
+    }
+
+    .com-a {
+        width: 90%;
+        height: 50px;
+        background-color: rgba(0, 255, 255, 0);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        font-family: 'Quicksand', sans-serif;
+    }
+
+    .bn {
+        width: 70px;
+        height: auto;
+        background-color: rgba(255, 0, 0, 0);
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+    }
+
+    .caja-bt {
+        width: 100%;
+        height: 300px;
+        background-color: rgba(39, 11, 221, 0);
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-bottom: 200px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: center;
     }
+
+    .caja-bt-uno {
+        width: 120px;
+        height: 140px;
+        background-color: rgba(255, 0, 0, 0);
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        align-content: center;
+        margin: 10px;
+        flex-direction: column;
+
+    }
+
+    .img-bt-logo {
+        width: 100px;
+    }
+
+    .btd {
+        width: 120px;
+        height: 40px;
+        border: none;
+        background-color: #000;
+    }
+
+    /*Peeerfil*/
 </style>
 
-<body>
+<body> <!---->
     <dir class="caja">
-        <img class="portada"
-            src="https://res.cloudinary.com/fo/upload/v1704396757/qr/Portada-nueva_ikbgoz.jpg" alt="">
-        <h1>Mis 15 a </h1>
-        <p>LHUIS FOTOGRAFO</p>
+        <div class="cajaT">
+            <h1>Mis 15 Jose</h1>
+            <p>LHUIS FOTOGRAFO</p>
+        </div>
+        <div class="portadac">
+            <img class="portada2"
+                src="https://res.cloudinary.com/fotoqe123/image/upload/v1705414506/qr/IMG_4621_zrrc6d.jpg" alt="">
+            <img class="portada"
+                src="https://res.cloudinary.com/fotoqe123/image/upload/v1705246256/qr/Portada-nueva_unjtgu.png" alt="">
+        </div>
     </dir>
+
     <div class="m">
         <p>best moments</p>
         <img class="im"
-            src="https://res.cloudinary.co
+            src="https://res.cloudinary.com/fotoqe123/image/upload/v1704193595/qr/WhatsApp_Image_2024-01-02_at_8.05.30_AM_ef0utf.jpg"
+            alt="">
 
     </div>
-    <div class="bt-ver">
-           <a href="https://drive.google.com/drive/u/0/moders/1Mbe2lCmNPX-2VNwnQy5Ut-GhUfArkZxG?usp=sharing"> <button>Ver fotos</button></a>
+    <div class="caja-bt">
+        <div class="caja-bt-uno">
+            <img class="img-bt-logo"
+                src="https://res.cloudinary.com/fotoqe123/image/upload/v1705414786/qr/qr-code_1_jxeywg.png" alt="">
+            <button class="btd">ver fotos</button>
+        </div>
+        <div class="caja-bt-uno">
+            <img class="img-bt-logo"
+                src="https://res.cloudinary.com/fotoqe123/image/upload/v1705414786/qr/qr-code_1_jxeywg.png" alt="">
+            <button class="btd">ver fotos</button>
+        </div>
+    </div>
+    <div class="qr-c">
+        <p>Qr Para descargar App Completo</p>
+        <img class="qr" src="https://res.cloudinary.com/fotoqe123/image/upload/v1705414786/qr/qr-code_1_jxeywg.png"
+            alt="">
+
+    </div>
+    <div class="com">
+        <!--
+
+    <div class="com-a">
+        <p style="color: #fff;">Compartir Carpeta App </p>
+        <p style="display: none;" id="text1">Compartir Carpeta App:
+            https://drive.google.com/drive/folders/11-CMbQrSquOSMcKT3EQgALf6Vd2do2lB?usp=sharing</p>
+        <div class="bn">
+            <button
+                style=" width: 30px; height: 30px; border-radius: 50px; display: flex; justify-content: center; align-items: center;"
+                onclick="copy('text1')"><i class="fa-solid fa-share-nodes"
+                    style="color: rgb(0, 0, 0); "></i></button>
+            <button
+                style=" width: 30px; height: 30px; border-radius: 50px; display: flex; justify-content: center; align-items: center;"
+                onclick="qr1();"><i class="fa-solid fa-qrcode" style="color: #000;"></i></button>
+
+        </div>
     </div>
 
-    <div style="width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    ">
-        <iframe style="border-radius: 10px;" width="90%" height="315" src="https://www.youtube.coN3EJ-W8I?si=fPXKBfXpOLS0HLPG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        <iframe style="border-radius: 10px; margin-top: 15px;" width="90%" height="315" src="https://wwwembed/ultCQyr788M?si=ezp3Q5YVc0iqfV0k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <div class="com-a">
+        <p style="color: #fff;">Compartir Carpeta Fer</p>
+        <p style="display: none;" id="text2">
+            https://drive.google.com/drive/folders/1T0vnRQoCUOKfXSkD29Y9lZznotkMITV0?usp=sharing</p>
+        <div class="bn">
+            <button
+                style=" width: 30px; height: 30px; border-radius: 50px; display: flex; justify-content: center; align-items: center;"
+                onclick="copy('text2')"><i class="fa-solid fa-share-nodes"
+                    style="color: rgb(0, 0, 0); "></i></button>
+            <button
+                style=" width: 30px; height: 30px; border-radius: 50px; display: flex; justify-content: center; align-items: center;"
+                onclick="qr2();"><i class="fa-solid fa-qrcode" style="color: #000;"></i></button>
+
+        </div>
     </div>
 
-    
-    
+    <div class="com-a">
+        <p style="color: #fff;">Compartir Carpeta De Punto G</p>
+        <p style="display: none;" id="text3">Compartir Carpeta De Punto G:
+            https://drive.google.com/drive/folders/1By2F0w_9wUHWjq-r_9_i-wOiOjhJ1Ho6?usp=sharing</p>
+        <div class="bn">
+            <button
+                style=" width: 30px; height: 30px; border-radius: 50px; display: flex; justify-content: center; align-items: center;"
+                onclick="copy('text3')"><i class="fa-solid fa-share-nodes"
+                    style="color: rgb(0, 0, 0); "></i></button>
+            <button
+                style=" width: 30px; height: 30px; border-radius: 50px; display: flex; justify-content: center; align-items: center;"
+                onclick="qr3();"><i class="fa-solid fa-qrcode" style="color: #000;"></i></button>
+
+        </div>
+    </div>
+ 
+ 
+    <div class="com-a">
+        <p style="color: #fff;">Compartir Carpeta Comunión </p>
+        <p style="display: none;" id="text4">Compartir Carpeta Comunión:
+            https://drive.google.com/drive/folders/1dOxs_VtHYIpcgLctNKjudm-t1q0sYHtA?usp=sharing</p>
+        <div class="bn">
+            <button
+                style=" width: 30px; height: 30px; border-radius: 50px; display: flex; justify-content: center; align-items: center;"
+                onclick="copy('text4')"><i class="fa-solid fa-share-nodes"
+                    style="color: rgb(0, 0, 0); "></i></button>
+            <button
+                style=" width: 30px; height: 30px; border-radius: 50px; display: flex; justify-content: center; align-items: center;"
+                onclick="qr4();"><i class="fa-solid fa-qrcode" style="color: #000;"></i></button>
+
+        </div>
+    </div>
+
+-->
+    </div>
     <div class="datos">
         <p class="p-p">Hola ¿Como estas?, Gracias por ese momento que tuvimos y pasarla bien, Sacando fotos.
             En fin, eso es todo y que tengas un hermoso día, cuando me necesites ya sabes cómo contactarme.
@@ -183,6 +379,112 @@
         <a href="https://wa.me/541144382987" target="_blank"><button>Contacto</button></a>
         <a href="https://bit.ly/lhuisruiz" target="_blank"><button>Pagina Web</button></a>
     </div>
+
+
+
+
+    <p id="alert" style="
+    width: 100%;
+    font-size: 25px;
+    text-align: center;
+    background-color: #333333;
+    color: #ffffff;
+    /*pocision fija*/
+    position: fixed;
+    /*fija*/
+    margin: auto;
+    bottom: 100px;
+    padding: 0px 0;
+    display: none;">Listo Para Compartir </p>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+        function copy(copyId) {
+            let inputElement = document.createElement("input");
+            inputElement.type = "text";
+            let copyText = document.getElementById(copyId).innerHTML;
+            inputElement.value = copyText;
+            document.body.appendChild(inputElement);
+            inputElement.select();
+            document.execCommand('copy');
+            document.body.removeChild(inputElement);
+
+            document.getElementById("alert").style.display = "block";
+            setTimeout(function () {
+                document.getElementById("alert").style.display = "none";
+            }, 3000);
+        }
+
+    </script>
+    <script>
+        function qr1() {
+            Swal.fire({
+                imageUrl: 'https://lh3.googleusercontent.com/u/9/drive-viewer/AEYmBYQl041MAL6r4LLfYi9a-Fb2m7qYX9nMABzB93MVUhrkUiNP85ahb3dTku27-ZszBM6dxt5EPWWuMGAygzVnIHVdQ7IZQQ=w1357-h646',
+
+                //tamaño
+                imageWidth: 300,
+                imageHeight: 300,
+                //cerrar
+                padding: '1rem',
+                showCloseButton: true,
+                showConfirmButton: false,
+                backdrop: `
+        rgb(54 54 54 / 58%)  `,
+                background: 'linear-gradient(#000,#000)',
+            })
+        }
+
+        function qr2() {
+            Swal.fire({
+                imageUrl: 'https://lh3.googleusercontent.com/u/9/drive-viewer/AEYmBYSLt_fB3PJsGap9WXplUC_5Di0EhPly3fXZ3EhntJ2rJJxHN4K0bzawKEpeXvSQz32gOb3GLqXtOrGuo6AFyjEpKoNteQ=w1357-h645',
+
+                //tamaño
+                imageWidth: 300,
+                imageHeight: 300,
+                //cerrar
+                padding: '1rem',
+                showCloseButton: true,
+                showConfirmButton: false,
+                backdrop: `
+        rgb(54 54 54 / 58%)  `,
+                background: 'linear-gradient(#000,#000)',
+            })
+        }
+
+        function qr3() {
+            Swal.fire({
+                imageUrl: 'https://lh3.googleusercontent.com/u/9/drive-viewer/AEYmBYQYh3NQDAScDLoPnfnjUiLSNymm9YLrYvwJErxtA19KD_PcryIAAMOVqpCb9TkSvq9doxtJQT50pC69vPkHxujYkEor2Q=w1357-h645',
+
+                //tamaño
+                imageWidth: 300,
+                imageHeight: 300,
+                //cerrar
+                padding: '1rem',
+                showCloseButton: true,
+                showConfirmButton: false,
+                backdrop: `
+        rgb(54 54 54 / 58%)  `,
+                background: 'linear-gradient(#000,#000)',
+            })
+        }
+
+        function qr4() {
+            Swal.fire({
+                imageUrl: 'https://lh3.googleusercontent.com/u/9/drive-viewer/AEYmBYQq8UipRVXSRvC009GBDd_tg93tKJ_izqOE2kDVNk8Hfy4GruySgytu5Ey2TJ0uufLqhDajGmGPKdBDoG8KhpcXTF-R=w909-h645',
+
+                //tamaño
+                imageWidth: 300,
+                imageHeight: 300,
+                //cerrar
+                padding: '1rem',
+                showCloseButton: true,
+                showConfirmButton: false,
+                backdrop: `
+        rgb(54 54 54 / 58%)  `,
+                background: 'linear-gradient(#000,#000)',
+            })
+        }
+    </script>
+
 </body>
 
 </html>
